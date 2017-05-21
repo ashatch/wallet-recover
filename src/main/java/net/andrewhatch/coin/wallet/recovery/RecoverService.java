@@ -34,7 +34,7 @@ public class RecoverService {
   }
 
   public void recover() {
-    NetworkParameters publicNetwork = NetworkParameters.fromID(NetworkParameters.ID_MAINNET);
+    final NetworkParameters publicNetwork = NetworkParameters.fromID(NetworkParameters.ID_MAINNET);
 
     try {
       final DeterministicKeyChain keyChain = getKeyChain();
@@ -52,7 +52,7 @@ public class RecoverService {
     for (int i = 0; i < config.keysToFind(); i++) {
 
       final DeterministicKey nextKey = keyChain.getKey(keyPurpose);
-      DumpedPrivateKey privateKey = nextKey.getPrivateKeyEncoded(network);
+      final DumpedPrivateKey privateKey = nextKey.getPrivateKeyEncoded(network);
 
       final String address = nextKey.toAddress(network).toString();
       final long balance = getBalanceForAddress(address);
