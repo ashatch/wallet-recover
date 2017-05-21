@@ -10,6 +10,9 @@ particular wallet.
 From these words, this tool generates addresses and then checks the current balance for that
 address.
 
+Place the words, separated by spaces in a text file. Be careful with this - be sure you remove
+this file properly afterwards. Don't _just_ delete it. Wipe it properly using secure wiping tools.
+
 # Prerequisites
 
 You'll need a JVM to run this and the ability to run _maven_ as per below.
