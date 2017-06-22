@@ -1,7 +1,7 @@
 package net.andrewhatch.coin.wallet.recovery;
 
 import info.blockchain.api.APIException;
-import info.blockchain.api.blockexplorer.Address;
+import info.blockchain.api.blockexplorer.entity.Address;
 import info.blockchain.api.blockexplorer.BlockExplorer;
 
 import net.andrewhatch.coin.wallet.Config;
